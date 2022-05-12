@@ -1,0 +1,127 @@
+.faq {
+  padding: 55px 0 59px;
+  font-family: $ff-popins;
+
+  @media (max-width: $tablet-width) {
+    padding: 7px 0 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 0 20px;
+  }
+}
+
+.faq__wrap {
+  display: grid;
+  grid-gap: 0;
+  width: 100%;
+  padding: 48px 100px 43px;
+
+  @media (max-width: $tablet-width) {
+    padding: 48px 0 43px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 28px;
+  }
+}
+
+.faq__item {
+  border: 1px solid $color-accent;
+  border-bottom: none;
+  padding: 0;
+  padding-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 10px;
+    padding-bottom: 47px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 25px;
+    padding-bottom: 10px;
+  }
+}
+
+.faq__item:last-child {
+  border-bottom: 1px solid $color-accent;;
+}
+
+.faq__content {
+  height:0px;
+  transition:height 1s ease-out;
+  transform: scaleY(0);
+  float:left;
+  display:block;
+}
+
+.open .faq__content {
+  padding: 0  400px 0 43px;
+  width: 100%;
+  margin: 0;
+  display:block;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+  height: auto;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    font-size: 14px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+  }
+}
+
+.faq__heading {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  margin: 0;
+  padding: 43px 20px 7px 42px;
+
+  @media (max-width: $mobile-width) {
+    padding: 16px 50px 7px 0;
+    font-size: 16px;
+  }
+}
+
+.faq__content p {
+  line-height: 21px;
+  margin: 0;
+}
+
+.faq__heading::after {
+  position: absolute;
+  color: $color-accent;
+  width: 25px;
+  height: 20px;
+  right: 40px;
+  top: calc(50% + 5px);
+
+  @media (max-width: $tablet-width) {
+    right: 46px;
+    scale: 1.3;
+    zoom: 1.3;
+  }
+
+  @media (max-width: $tablet-width) {
+    right: 16px;
+    scale: 1.3;
+    zoom: 1.3;
+    top: 16px;
+  }
+}
+
+.open .faq__heading::after {
+  content:url('../img/svg/up.svg');
+}
+
+.faq__heading::after {
+  content:url('../img/svg/down.svg');
+}

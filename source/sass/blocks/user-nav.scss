@@ -1,0 +1,34 @@
+.user-nav {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.user-nav svg {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.user-nav span,
+.user-nav li:last-child {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-nav a {
+  color: $color-default-black;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    padding: 15px;
+    padding-top: 12px;
+    color: $color-default-black;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 2px;
+  }
+}

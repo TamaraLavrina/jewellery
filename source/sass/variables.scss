@@ -1,0 +1,25 @@
+// Colors
+// ---------------------------------
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-light-grey-10a:              rgba(155, 153, 151, 1);
+$color-layout:                      rgba(86, 64, 52, 0.7);
+$color-accent:                      #a87a61;
+$color-back:                        #f1ebe5;
+
+$color-transparent:                 rgba(255, 255, 255, 0);
+$color-transparent-15a:             rgba(255, 255, 255, 0.15);
+
+
+// Typography
+// ---------------------------------
+$ff-basic: "cormorant";
+$ff-popins: "poppins";
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+
+// Breakpoints
+// ---------------------------------
+$tablet-width: 1023px;
+$mobile-width: 767px;

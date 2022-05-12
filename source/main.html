@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jewellery" />
+    <title>Jewellery</title>
+    <link rel="preload" href="./fonts/poppins-v15-latin-500.woff" as="font" type="font/woff" crossorigin=""/>
+    <link rel="preload" href="./fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin=""/>
+    <link rel="preload" href="./fonts/poppins-v15-latin-700.woff" as="font" type="font/woff" crossorigin="" />
+    <link rel="preload" href="./fonts/poppins-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="preload" href="./fonts/poppins-v15-latin-regular.woff" as="font" type="font/woff" crossorigin="" />
+    <link rel="preload" href="./fonts/poppins-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="" />
+    <!-- <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-700.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-600.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-italic.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-500italic.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-500italic.woff2" as="font" type="font/woff2" crossorigin=""> -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header header--menu-open">
+        <div class="header__wrapper header__wrapper--mob">
+          <!-- <header class="header header--menu-closed">
+            <div class="header__wrapper .header__wrapper--menu-closed"> -->
+          <button type="button" class="header__menu-button">
+            <svg width="25" height="18">
+              <use xlink:href="./img/sprite/sprite.svg#menu"></use>
+            </svg>
+          </button>
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <label>
+              <input type="search" placeholder="Type here to search" />
+            </label>
+            <button type="submit">
+              <svg width="16" height="16">
+                <use xlink:href="./img/sprite/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <a class="header__logo logo">
+            <svg width="66" height="66">
+              <use xlink:href="./img/sprite/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header__user-nav user-nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <span>Login</span>
+                  <svg width="20" height="18">
+                    <use xlink:href="./img/sprite/sprite.svg#cart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li><a href="#">Cart 0</a></li>
+            </ul>
+          </nav>
+          <nav class="header__site-nav site-nav">
+            <ul>
+              <li><a href="#">What’s new</a></li>
+              <li><a href="#">Chokers</a></li>
+              <li><a href="#">Necklaces</a></li>
+              <li><a href="#">Rings</a></li>
+              <li><a href="#">Earrings</a></li>
+            </ul>
+          </nav>
+          <nav class="header__info-nav info-nav">
+            <ul>
+              <li><a href="#">About CH</a></li>
+              <li><a href="#">Stores & Hours</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <a href="#">LOGIN</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="promo">
+          <div class="promo__wrap">
+            <picture>
+              <!-- desktop:
+                1x - 1366px; 2x - 2732px;
+                tablet:
+                1x - 768px; 2x - 1536px;
+                mobile:
+                1x - 320px; 2x - 640px;-->
+              <!-- web-p-->
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/main/promo@1x.webp 1x,
+                  ./img/main/promo@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1023px)"
+                srcset="
+                  ./img/main/promo-tab@1x.webp 1x,
+                  ./img/main/promo-tab@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/main/promo-mob@1x.webp 1x,
+                  ./img/main/promo-mob@2x.webp 2x
+                "
+              />
+
+              <!-- -->
+              <img
+                srcset="
+                  ./img/main/promo@1x.jpg     1366w,
+                  ./img/main/promo@2x.jpg     2732w,
+                  ./img/main/promo-tab@1x.jpg  768w,
+                  ./img/main/promo-tab@2x.jpg 1536w,
+                  ./img/main/promo-mob@1x.jpg  320w,
+                  ./img/main/promo-mob@2x.jpg  640w
+                "
+                sizes="
+              (min-width: 1024px) 1366px,
+              ((min-width: 1024px) and (min-resolution: 2dppx)) 2732px,
+              (max-width: 1023px) 768px,
+              ((max-width: 1023px) and (min-resolution: 2dppx)) 1536px,
+              (max-width: 767px) 320px,
+              ((max-width: 767px) and (min-resolution: 2dppx)) 640px
+              "
+                src="./img/main/promo@1x.jpg"
+                loading="lazy"
+                alt="promo Jewellery"
+                width="1366"
+                height="463"
+              />
+            </picture>
+
+            <div class="promo__text">
+              <h1>PERFECTION</h1>
+              <p>made to be yours</p>
+            </div>
+          </div>
+        </section>
+        <div class="common-wrapp">
+          <section class="shop-slider">
+            <h2>New In</h2>
+            <div class="slider swiper">
+              <button
+                class="slider__btn slider__btn--prev swiper-button-prev"
+                aria-label="Предыдущий слайд"
+              >
+                <svg width="30" height="11">
+                  <use xlink:href="./img/sprite/sprite.svg#prev"></use>
+                </svg>
+              </button>
+              <button
+                class="slider__btn slider__btn--next swiper-button-next"
+                aria-label="Следующий слайд"
+              >
+                <svg width="30" height="11">
+                  <use xlink:href="./img/sprite/sprite.svg#next"></use>
+                </svg>
+              </button>
+              <a href="#">Shop Now</a>
+              <ul class="slider__list swiper-wrapper">
+                <!-- Slides -->
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/double-pearl-earrings.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Double pearl earrings</h3>
+                  <span>$ 115</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/black-choker-gold-bead.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Choker with gold bead</h3>
+                  <span>$ 55</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/gold-layered-necklace.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Gold layered necklace</h3>
+                  <span>$ 155</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/blue-gemstone-pendant.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Blue gemstone pendant</h3>
+                  <span>$ 105</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/boho-earrings.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Boho earrings</h3>
+                  <span>$ 105</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/bird-necklace.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Gold bird necklace</h3>
+                  <span>$ 105</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/black-leather-choker-necklace.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Black leather choker</h3>
+                  <span>$ 105</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/purple-gemstone-necklace.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Necklace with amethyst</h3>
+                  <span>$ 105</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/elephant-earrings.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Elephant earrings</h3>
+                  <span>$ 95</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/threader-necklace-closeup.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Threader necklace</h3>
+                  <span>$ 115</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/origami-crane-necklace.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Origami crane necklace</h3>
+                  <span>$ 105</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <img
+                    src="./img/main/items/marble-earrings.jpg"
+                    width="270"
+                    height="284"
+                    alt="jewellery"
+                  />
+                  <h3>Marble earrings</h3>
+                  <span>$ 105</span>
+                </li>
+              </ul>
+              <!-- If we need pagination -->
+              <div class="slider__pagination swiper-pagination"></div>
+            </div>
+          </section>
+          <section class="article">
+            <h2>Blog</h2>
+            <a href="#">Read all</a>
+            <div class="article__container">
+              <article>
+                <div class="article__image">
+                  <picture>
+                    <!-- desktop:
+                      1x - 285px; 2x - 570px;
+                      tablet:
+                      1x - 339px; 2x -678px;
+                      mobile:
+                      1x - 290px; 2x - 580px;-->
+                    <!-- web-p-->
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1024px)"
+                      srcset="./img/art/a1@1x.webp 1x, ./img/art/a1@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1023px)"
+                      srcset="
+                        ./img/art/a1-tab@1x.webp 1x,
+                        ./img/art/a1-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/art/a1-mob@1x.webp 1x,
+                        ./img/art/a1-mob@2x.webp 2x
+                      "
+                    />
+
+                    <!-- -->
+                    <img
+                      srcset="
+                        ./img/art/a1@1x.jpg     285w,
+                        ./img/art/a1@2x.jpg     570w,
+                        ./img/art/a1-tab@1x.jpg 339w,
+                        ./img/art/a1-tab@2x.jpg 678w,
+                        ./img/art/a1-mob@1x.jpg 290w,
+                        ./img/art/a1-mob@2x.jpg 580w
+                      "
+                      sizes="
+                    (min-width: 1024px) 285px,
+                    ((min-width: 1024px) and (min-resolution: 2dppx)) 570px,
+                    (max-width: 1023px) 339px,
+                    ((max-width: 1023px) and (min-resolution: 2dppx)) 678px,
+                    (max-width: 767px) 290px,
+                    ((max-width: 767px) and (min-resolution: 2dppx)) 580px
+                    "
+                      src="./img/art/a1@1x.jpg"
+                      loading="lazy"
+                      alt="promo Jewellery"
+                      width="285"
+                      height="300"
+                    />
+                  </picture>
+                </div>
+                <div class="article__text">
+                  <time datetime="2019-09-30 00:00">September 30, 2019</time>
+                  <h3>How to care for your jewellery</h3>
+                  <a href="#">Read Article</a>
+                </div>
+              </article>
+              <article>
+                <div class="article__image">
+                  <picture>
+                    <!-- desktop:
+                      1x - 285px; 2x - 570px;
+                      tablet:
+                      1x - 339px; 2x -678px;
+                      mobile:
+                      1x - 290px; 2x - 580px;-->
+                    <!-- web-p-->
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1024px)"
+                      srcset="./img/art/a2@1x.webp 1x, ./img/art/a2@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1023px)"
+                      srcset="
+                        ./img/art/a2-tab@1x.webp 1x,
+                        ./img/art/a2-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/art/a2-mob@1x.webp 1x,
+                        ./img/art/a2-mob@2x.webp 2x
+                      "
+                    />
+
+                    <!-- -->
+                    <img
+                      srcset="
+                        ./img/art/a2@1x.jpg     285w,
+                        ./img/art/a2@2x.jpg     570w,
+                        ./img/art/a2-tab@1x.jpg 339w,
+                        ./img/art/a2-tab@2x.jpg 678w,
+                        ./img/art/a2-mob@1x.jpg 290w,
+                        ./img/art/a2-mob@2x.jpg 580w
+                      "
+                      sizes="
+                    (min-width: 1024px) 285px,
+                    ((min-width: 1024px) and (min-resolution: 2dppx)) 570px,
+                    (max-width: 1023px) 339px,
+                    ((max-width: 1023px) and (min-resolution: 2dppx)) 678px,
+                    (max-width: 767px) 290px,
+                    ((max-width: 767px) and (min-resolution: 2dppx)) 580px
+                    "
+                      src="./img/art/a2@1x.jpg"
+                      loading="lazy"
+                      alt="promo Jewellery"
+                      width="285"
+                      height="300"
+                    />
+                  </picture>
+                </div>
+                <div class="article__text">
+                  <time datetime="2019-09-23 00:00">September 23, 2019</time>
+                  <h3>Power of crystals</h3>
+                  <a href="#">Read Article</a>
+                </div>
+              </article>
+              <article>
+                <div class="article__image">
+                  <picture>
+                    <!-- desktop:1x - 570px; 2x - 1140px;
+                    tablet: 1x - 339px; 2x -678px;
+                    mobile: 1x - 290px; 2x - 580px;-->
+                    <!-- web-p-->
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1024px)"
+                      srcset="./img/art/a3@1x.webp 1x, ./img/art/a3@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1023px)"
+                      srcset="
+                        ./img/art/a3-tab@1x.webp 1x,
+                        ./img/art/a3-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/art/a3-mob@1x.webp 1x,
+                        ./img/art/a3-mob@2x.webp 2x
+                      "
+                    />
+
+                    <!-- -->
+                    <img
+                      srcset="
+                        ./img/art/a3@1x.jpg     285w,
+                        ./img/art/a3@2x.jpg     570w,
+                        ./img/art/a3-tab@1x.jpg 339w,
+                        ./img/art/a3-tab@2x.jpg 678w,
+                        ./img/art/a3-mob@1x.jpg 290w,
+                        ./img/art/a3-mob@2x.jpg 580w
+                      "
+                      sizes="
+                  (min-width: 1024px) 570px,
+                  ((min-width: 1024px) and (min-resolution: 2dppx)) 1140px,
+                  (max-width: 1023px) 339px,
+                  ((max-width: 1023px) and (min-resolution: 2dppx)) 678px,
+                  (max-width: 767px) 290px,
+                  ((max-width: 767px) and (min-resolution: 2dppx)) 580px
+                  "
+                      src="./img/art/a3@1x.jpg"
+                      loading="lazy"
+                      alt="promo Jewellery"
+                      width="570"
+                      height="630"
+                    />
+                  </picture>
+                </div>
+                <div class="article__text">
+                  <time datetime="2019-09-16 00:00">September 16, 2019</time>
+                  <h3>AW 19 trends</h3>
+                  <a href="#">Read Article</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="faq">
+            <h2>Frequently asked questions</h2>
+            <div class="faq__wrap">
+              <div class="faq__item open">
+                <h3 class="faq__heading">
+                  What materials are the&nbsp;jewellery made of?
+                </h3>
+                <div class="faq__content">
+                  <p>
+                    Our jewellerry is made of solid gold, silver or leather.
+                    Also, some jewellery contains precious and semiprecious
+                    stones and crystals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <h3 class="faq__heading">Which countries do&nbsp;you&nbsp;deliver to?</h3>
+                <div class="faq__content">
+                  <p>
+                    Our jewellerry is made of solid gold, silver or leather.
+                    Also, some jewellery contains precious and semiprecious
+                    stones and crystals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <h3 class="faq__heading">What are the payment&nbsp;methods?</h3>
+                <div class="faq__content">
+                  <p>
+                    Our jewellerry is made of solid gold, silver or leather.
+                    Also, some jewellery contains precious and semiprecious
+                    stones and crystals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <h3 class="faq__heading">
+                  Can I return the jewellery&nbsp;if&nbsp;it&nbsp;didn’t fit me?
+                </h3>
+                <div class="faq__content">
+                  <p>
+                    Our jewellerry is made of solid gold, silver or leather.
+                    Also, some jewellery contains precious and semiprecious
+                    stones and crystals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="gallery">
+          <h2>@Chjewellery</h2>
+          <a href="#">Follow Us</a>
+          <ul class="gallery__wrap">
+            <li>
+              <picture>
+                <!-- desktop: 1x - 230px; 2x - 460px;
+                  tablet: 1x - 133x; 2x -266px; -->
+                <!-- web-p-->
+                <source type="image/webp" media="(min-width: 1024px)" srcset="./img/gall/gal-1@1x.webp 1x, ./img/gall/gal-1@2x.webp 2x"/>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/gall/gal-1-t@1x.webp 1x, ./img/gall/gal-1-t@2x.webp 2x"/>
+
+                <img srcset="
+                  ./img/gall/gal-1@1x.jpg     230w,
+                  ./img/gall/gal-1@2x.jpg      460w,
+                  ./img/gall/gal-1-t@1x.jpg   133w,
+                  ./img/gall/gal-1-t@2x.jpg    266w
+                  "
+                  sizes="
+                (min-width: 1024px) 230px,
+                ((min-width: 1024px) and (min-resolution: 2dppx)) 460px,
+                (max-width: 1023px) 133px,
+                ((max-width: 1023px) and (min-resolution: 2dppx)) 266px
+                "
+                  src="./img/gall/gal-1@1x.jpg" loading="lazy" alt="promo Jewellery" width="230" height="230"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <!--desktop: 1x - 399px; 2x - 798px;
+                    tablet: 1x - 231x; 2x -462px;
+                    mobile: 1x - 133px; 2x - 266px;-->
+
+                <!-- web-p-->
+                <source type="image/webp" media="(min-width: 1024px)" srcset="./img/gall/gal-2@1x.webp 1x, ./img/gall/gal-2@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 1023px)" srcset="./img/gall/gal-2-t@1x.webp 1x, ./img/gall/gal-2-t@2x.webp 2x"/>
+                <source type="image/webp" media="(max-width: 767px)" srcset="./img/gall/gal-2-m@1x.webp 1x, ./img/gall/gal-2-m@2x.webp 2x"/>
+
+                <img srcset="
+                  ./img/gall/gal-2@1x.jpg     399w,
+                  ./img/gall/gal-2@2x.jpg     798w,
+                  ./img/gall/gal-2-t@1x.jpg   231w,
+                  ./img/gall/gal-2-t@2x.jpg   462w,
+                  ./img/gall/gal-2-m@1x.jpg   133w,
+                  ./img/gall/gal-2-m@2x.jpg   266w
+
+                  "
+                  sizes="
+                (min-width: 1024px) 399px,
+                ((min-width: 1024px) and (min-resolution: 2dppx)) 798px,
+                (max-width: 1023px) 231px,
+                ((max-width: 1023px) and (min-resolution: 2dppx)) 462px,
+                (max-width: 767px) 133px,
+                ((max-width: 767px) and (min-resolution: 2dppx)) 266px
+                "
+                  src="./img/gall/gal-2@1x.jpg" loading="lazy" alt="promo Jewellery" width="399" height="412"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+              <!-- desktop: 1x - 230px; 2x - 460px;
+                tablet: 1x - 133x; 2x -266px; -->
+              <!-- web-p-->
+              <source type="image/webp" media="(min-width: 1024px)" srcset="./img/gall/gal-3@1x.webp 1x, ./img/gall/gal-3@2x.webp 2x"/>
+              <source type="image/webp" media="(max-width: 1023px)" srcset="./img/gall/gal-3-t@1x.webp 1x, ./img/gall/gal-3-t@2x.webp 2x"/>
+
+              <img srcset="
+                ./img/gall/gal-3@1x.jpg     230w,
+                ./img/gall/gal-3@2x.jpg     460w,
+                ./img/gall/gal-3-t@1x.jpg   133w,
+                ./img/gall/gal-3-t@2x.jpg   266w
+                "
+                sizes="
+              (min-width: 1024px) 230px,
+              ((min-width: 1024px) and (min-resolution: 2dppx)) 460px,
+              (max-width: 1023px) 133px,
+              ((max-width: 1023px) and (min-resolution: 2dppx)) 266px
+              "
+                src="./img/gall/gal-3@1x.jpg" loading="lazy" alt="promo Jewellery" width="230" height="230"
+              />
+            </picture>
+            </li>
+            <li>
+              <picture>
+                <!-- desktop: 1x - 230px; 2x - 460px;
+                  tablet: 1x - 133x; 2x -266px; -->
+                <!-- web-p-->
+                <source type="image/webp" media="(min-width: 1024px)" srcset="./img/gall/gal-4@1x.webp 1x, ./img/gall/gal-4@2x.webp 2x"/>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/gall/gal-4-t@1x.webp 1x, ./img/gall/gal-4-t@2x.webp 2x"/>
+
+                <img srcset="
+                  ./img/gall/gal-4@1x.jpg     230w,
+                  ./img/gall/gal-4@2x.jpg      460w,
+                  ./img/gall/gal-4-t@1x.jpg   133w,
+                  ./img/gall/gal-4-t@2x.jpg    266w
+                  "
+                  sizes="
+                (min-width: 1024px) 230px,
+                ((min-width: 1024px) and (min-resolution: 2dppx)) 460px,
+                (max-width: 1023px) 133px,
+                ((max-width: 1023px) and (min-resolution: 2dppx)) 266px
+                "
+                  src="./img/gall/gal-4@1x.jpg" loading="lazy" alt="promo Jewellery" width="230" height="230"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <!-- desktop: 1x - 230px; 2x - 460px;
+                  tablet: 1x - 133x; 2x -266px; -->
+                <!-- web-p-->
+                <source type="image/webp" media="(min-width: 1024px)" srcset="./img/gall/gal-5@1x.webp 1x, ./img/gall/gal-5@2x.webp 2x"/>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/gall/gal-5-t@1x.webp 1x, ./img/gall/gal-5-t@2x.webp 2x"/>
+
+                <img srcset="
+                  ./img/gall/gal-5@1x.jpg     230w,
+                  ./img/gall/gal-5@2x.jpg     460w,
+                  ./img/gall/gal-5-t@1x.jpg   133w,
+                  ./img/gall/gal-5-t@2x.jpg   266w
+                  "
+                  sizes="
+                (min-width: 1024px) 230px,
+                ((min-width: 1024px) and (min-resolution: 2dppx)) 460px,
+                (max-width: 1023px) 133px,
+                ((max-width: 1023px) and (min-resolution: 2dppx)) 266px
+                "
+                  src="./img/gall/gal-5@1x.jpg" loading="lazy" alt="promo Jewellery" width="230" height="150" />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <!-- desktop: 1x - 230px; 2x - 460px;
+                  tablet: 1x - 133x; 2x -266px; -->
+                <!-- web-p-->
+                <source type="image/webp" media="(min-width: 1024px)" srcset="./img/gall/gal-7@1x.webp 1x, ./img/gall/gal-7@2x.webp 2x"/>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/gall/gal-7-t@1x.webp 1x, ./img/gall/gal-7-t@2x.webp 2x"/>
+
+                <img srcset="
+                  ./img/gall/gal-7@1x.jpg     230w,
+                  ./img/gall/gal-7@2x.jpg     460w,
+                  ./img/gall/gal-7-t@1x.jpg   133w,
+                  ./img/gall/gal-7-t@2x.jpg   266w
+                  "
+                  sizes="
+                (min-width: 1024px) 230px,
+                ((min-width: 1024px) and (min-resolution: 2dppx)) 460px,
+                (max-width: 1023px) 133px,
+                ((max-width: 1023px) and (min-resolution: 2dppx)) 266px
+                "
+                  src="./img/gall/gal-7@1x.jpg" loading="lazy" alt="promo Jewellery" width="230" height="150" />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <!-- desktop: 1x - 230px; 2x - 460px;
+                  tablet: 1x - 133x; 2x -266px; -->
+                <!-- web-p-->
+                <source type="image/webp" media="(min-width: 1024px)" srcset="./img/gall/gal-8@1x.webp 1x, ./img/gall/gal-8@2x.webp 2x"/>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="./img/gall/gal-8-t@1x.webp 1x, ./img/gall/gal-8-t@2x.webp 2x"/>
+
+                <img srcset="
+                  ./img/gall/gal-8@1x.jpg     230w,
+                  ./img/gall/gal-8@2x.jpg     460w,
+                  ./img/gall/gal-8-t@1x.jpg   133w,
+                  ./img/gall/gal-8-t@2x.jpg   266w
+                  "
+                  sizes="
+                (min-width: 1024px) 230px,
+                ((min-width: 1024px) and (min-resolution: 2dppx)) 460px,
+                (max-width: 1023px) 133px,
+                ((max-width: 1023px) and (min-resolution: 2dppx)) 266px
+                "
+                  src="./img/gall/gal-8@1x.jpg" loading="lazy" alt="promo Jewellery" width="230" height="150" />
+              </picture>
+            </li>
+          </ul>
+        </section>
+        <!-- хвост от дива - контейнера с максимальной шириной-->
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="common-wrapp">
+          <div class="footer__wrap">
+            <form action="https://echo.htmlacademy.ru/" method="GET">
+              <fieldset>
+                <legend>The good stuff in&nbsp;your&nbsp;inbox</legend>
+                <p>News and updates from CH. No&nbsp;spam, we promise.</p>
+                <div class="footer__email">
+                  <label>
+                    <input type="email" placeholder="Your E-mail" required>
+                  </label>
+                  <button type="submit" value="Sign Up">
+                    <span>Sign Up</span>
+                    <svg width="30" height="10">
+                      <use xlink:href="./img/sprite/sprite.svg#signUp"></use>
+                    </svg>
+                  </button>
+                </div>
+
+              </fieldset>
+          </form>
+          <ul class="footer__list">
+            <li><a href="#">Ordering & Payment</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">About CH</a></li>
+            <li><a href="#">Stores & Hours</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="footer__socials">
+            <li><a href="#">
+                <svg width="15" height="15" viewbox="0 0 8 15">
+                  <use xlink:href="./img/sprite/sprite.svg#fb"></use>
+                </svg>
+                <span>Facebook</span>
+              </a></li>
+            <li><a href="#">
+                <svg width="15" height="15" viewbox="0 0 15 15">
+                    <use xlink:href="./img/sprite/sprite.svg#inst"></use>
+                </svg>
+                <span>Instagram</span>
+              </a></li>
+            <li><a href="#">
+                <svg width="16" height="15" viewbox="0 0 16 15">
+                  <use xlink:href="./img/sprite/sprite.svg#pin"></use>
+                </svg>
+                <span>Pinterest</span>
+              </a></li>
+            <li><a href="#">
+                <svg width="15" height="15" viewbox="0 0 15 13">
+                  <use xlink:href="./img/sprite/sprite.svg#tw"></use>
+                </svg>
+                <span>Twitter</span>
+              </a></li>
+          </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
