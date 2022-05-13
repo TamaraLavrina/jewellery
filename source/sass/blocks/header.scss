@@ -144,6 +144,11 @@
     padding-left: 30px;
     padding-right: 25px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .header input {
@@ -152,12 +157,20 @@
   padding: 10px;
   padding-left: 30px;
   border: none;
-  border-radius: 21px;
+
 
   @media (max-width: $tablet-width) {
+    border-radius: 21px;
     padding: 7px;
     padding-left: 30px;
   }
+}
+
+.header input:focus,
+.header input:active {
+  outline: none;
+  border-bottom: 1px solid $color-accent;
+  background-color: $color-transparent-15a;
 }
 
 .header input::placeholder {
@@ -182,13 +195,18 @@
   @media (max-width: $tablet-width) {
     color: $color-default-white;
     left: 44px;
-    top: 20px;
+    top: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: 13px;
   }
 }
 
 .header button[type="submit"] svg {
   fill: $color-default-black;
 }
+
 
 
 //
@@ -232,6 +250,10 @@
     display: grid;
     grid-column: 1/-1;
     padding-left: 25px;
+
+    @media (max-width: $mobile-width) {
+      padding-left: 0;
+    }
   }
 
   .header--menu-open .header__site-nav li {
@@ -241,6 +263,11 @@
   .header__wrapper--mob .header__site-nav ul {
     grid-template-columns: 1fr;
     padding-top: 40px;
+
+    @media (max-width: $mobile-width) {
+      padding-left: 5px;
+      padding-top: 25px;
+    }
   }
 
   .header__wrapper--mob .header__site-nav a,
@@ -258,6 +285,10 @@
     grid-row: 5/6;
     grid-column: 1/-1;
     padding-left: 35px;
+
+    @media (max-width: $mobile-width) {
+      padding-left: 0;
+    }
   }
 
   .header__wrapper--mob .header__info-nav li {
@@ -275,6 +306,11 @@
 
   .header__wrapper--mob .header__info-nav a[href="login.html"] {
     margin-top: 30px;
+
+    @media (max-width: $mobile-width) {
+      margin-top: 20px;
+      padding-left: 55;
+    }
   }
 
   .header__wrapper--mob .header__info-nav ul {
@@ -282,6 +318,11 @@
     padding: 0;
     padding-top: 20px;
     margin: 0;
+
+    @media (max-width: $mobile-width) {
+      padding-top: 15px;
+      padding-left: 5px;
+    }
   }
 
   .header__wrapper--mob .header__menu-button svg {
