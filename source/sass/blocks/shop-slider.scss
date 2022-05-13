@@ -33,7 +33,7 @@ padding: 120px 0 43px;
 .shop-slider a {
   display: block;
   padding: 5px;
-  max-width: 120px;
+  max-width: 95px;
   margin: 0 auto;
   margin-top: 19px;
   font-family: $ff-popins;
@@ -41,12 +41,18 @@ padding: 120px 0 43px;
   font-weight: 500;
   line-height: 21px;
   text-align: center;
-  text-decoration: underline;
 
   @media (max-width: $tablet-width) {
     margin-top: 15px;
   }
 }
+
+.shop-slider .decor::after {
+  left: 0;
+  bottom: 0;
+  width: 95%;
+}
+
 
 .shop-slider ul {
   margin-top: 55px;

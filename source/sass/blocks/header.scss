@@ -138,6 +138,12 @@
 .header__wrapper form {
   position: relative;
   padding-top: 30px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 25px;
+  }
 }
 
 .header input {
@@ -147,6 +153,11 @@
   padding-left: 30px;
   border: none;
   border-radius: 21px;
+
+  @media (max-width: $tablet-width) {
+    padding: 7px;
+    padding-left: 30px;
+  }
 }
 
 .header input::placeholder {
@@ -170,6 +181,8 @@
 
   @media (max-width: $tablet-width) {
     color: $color-default-white;
+    left: 44px;
+    top: 20px;
   }
 }
 
@@ -184,7 +197,7 @@
 @media (max-width: $tablet-width) {
   .header--menu-open {
     height: 100vh;
-    overflow: scroll;
+    // overflow: scroll;
     background-color: $color-accent;
   }
 
@@ -217,26 +230,57 @@
 
   .header--menu-open .header__site-nav {
     display: grid;
-    grid-column: 1/2;
+    grid-column: 1/-1;
+    padding-left: 25px;
+  }
+
+  .header--menu-open .header__site-nav li {
+    padding: 0;
   }
 
   .header__wrapper--mob .header__site-nav ul {
     grid-template-columns: 1fr;
+    padding-top: 40px;
   }
 
   .header__wrapper--mob .header__site-nav a,
   .header__wrapper--mob .header__info-nav a {
+    display: block;
+    padding: 16px 0;
     color: $color-default-white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
   }
 
   .header__wrapper--mob .header__info-nav {
     display: grid;
     grid-row: 5/6;
+    grid-column: 1/-1;
+    padding-left: 35px;
+  }
+
+  .header__wrapper--mob .header__info-nav li {
+    padding: 0;
+  }
+
+  .header__wrapper--mob .header__info-nav a {
+    display: block;
+    padding: 12px 0;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .header__wrapper--mob .header__info-nav a[href="login.html"] {
+    margin-top: 30px;
   }
 
   .header__wrapper--mob .header__info-nav ul {
     list-style: none;
     padding: 0;
+    padding-top: 20px;
     margin: 0;
   }
 

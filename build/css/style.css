@@ -666,6 +666,20 @@ h2 {
   margin: 0;
 }
 
+.decor {
+  position: relative;
+}
+
+.decor::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -5px;
+  background-color: #a87a61;
+}
+
 .header {
   background-image: -o-linear-gradient(top, #fff 114px, #e0e0e0e0 115px, #f1f1f1 116px, #fff 116px);
   background-image: linear-gradient(to bottom, #fff 114px, #e0e0e0e0 115px, #f1f1f1 116px, #fff 116px);
@@ -926,7 +940,7 @@ h2 {
 .shop-slider a {
   display: block;
   padding: 5px;
-  max-width: 120px;
+  max-width: 95px;
   margin: 0 auto;
   margin-top: 19px;
   font-family: "poppins";
@@ -934,7 +948,12 @@ h2 {
   font-weight: 500;
   line-height: 21px;
   text-align: center;
-  text-decoration: underline;
+}
+
+.shop-slider .decor::after {
+  left: 0;
+  bottom: 0;
+  width: 95%;
 }
 
 .shop-slider ul {
@@ -1055,12 +1074,28 @@ h2 {
 
 .article a {
   display: block;
+  margin: 20px auto 0;
   font-family: "poppins";
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
-  margin-top: 20px;
   text-align: center;
+}
+
+.article > a {
+  max-width: 80px;
+}
+
+.article .decor::after {
+  left: 3px;
+  bottom: -5px;
+  width: 90%;
+}
+
+.article__text .decor::after {
+  left: 0;
+  bottom: 1px;
+  width: 100%;
 }
 
 .article__container {
@@ -1149,6 +1184,12 @@ h2 {
 
 .article__image img {
   height: 100%;
+}
+
+.article__image:hover ~ .article__text,
+.article__text:hover {
+  -webkit-box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
 }
 
 .faq {
@@ -1253,7 +1294,7 @@ h2 {
 
 .gallery a {
   display: block;
-  max-width: 180px;
+  max-width: 90px;
   margin: 28px auto 6px;
   font-family: "poppins";
   font-size: 16px;
@@ -1261,6 +1302,12 @@ h2 {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+.gallery .decor::after {
+  left: 4px;
+  bottom: -4px;
+  width: 90%;
 }
 
 .gallery li:nth-child(7n+2) {
@@ -1409,6 +1456,10 @@ h2 {
   font-size: 16px;
 }
 
+.footer a:hover {
+  color: #a87a61;
+}
+
 .footer ul a {
   color: #ffffff;
 }
@@ -1474,6 +1525,10 @@ h2 {
   animation: bounce 1s;
 }
 
+.footer__socials a:hover .footer__socials svg {
+  color: #a87a61;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1519,13 +1574,25 @@ h2 {
     margin-right: 20px;
   }
 
+  .header__wrapper form {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 25px;
+  }
+
+  .header input {
+    padding: 7px;
+    padding-left: 30px;
+  }
+
   .header button[type="submit"] {
     color: #ffffff;
+    left: 44px;
+    top: 20px;
   }
 
   .header--menu-open {
     height: 100vh;
-    overflow: scroll;
     background-color: #a87a61;
   }
 
@@ -1578,19 +1645,28 @@ h2 {
   .header--menu-open .header__site-nav {
     display: -ms-grid;
     display: grid;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
+    grid-column: 1/-1;
+    padding-left: 25px;
+  }
+
+  .header--menu-open .header__site-nav li {
+    padding: 0;
   }
 
   .header__wrapper--mob .header__site-nav ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    padding-top: 40px;
   }
 
   .header__wrapper--mob .header__site-nav a,
   .header__wrapper--mob .header__info-nav a {
+    display: block;
+    padding: 16px 0;
     color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
   }
 
   .header__wrapper--mob .header__info-nav {
@@ -1599,11 +1675,30 @@ h2 {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
     grid-row: 5/6;
+    grid-column: 1/-1;
+    padding-left: 35px;
+  }
+
+  .header__wrapper--mob .header__info-nav li {
+    padding: 0;
+  }
+
+  .header__wrapper--mob .header__info-nav a {
+    display: block;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .header__wrapper--mob .header__info-nav a[href="login.html"] {
+    margin-top: 30px;
   }
 
   .header__wrapper--mob .header__info-nav ul {
     list-style: none;
     padding: 0;
+    padding-top: 20px;
     margin: 0;
   }
 
@@ -1964,6 +2059,13 @@ h2 {
     grid-row-gap: 27px;
     padding-top: 45px;
     padding-bottom: 72px;
+  }
+
+  .gallery li img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .gallery li:nth-child(3),

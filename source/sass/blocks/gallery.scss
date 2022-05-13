@@ -28,7 +28,7 @@
 
 .gallery a {
   display: block;
-  max-width: 180px;
+  max-width: 90px;
   margin: 28px auto 6px;
   font-family: $ff-popins;
   font-size: 16px;
@@ -42,6 +42,12 @@
   }
 }
 
+.gallery .decor::after {
+  left: 4px;
+  bottom: -4px;
+  width: 90%;
+}
+
 .gallery li:nth-child(7n+2) {
   display: grid;
   grid-row: span 2;
@@ -53,6 +59,12 @@
 
 .gallery li img {
   height: 100%;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: fit-content;
+  }
+
 }
 
 @media (max-width: $mobile-width) {

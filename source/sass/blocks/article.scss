@@ -13,12 +13,29 @@
 
 .article a {
   display: block;
+  margin: 20px auto 0;
+
   font-family: $ff-popins;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
-  margin-top: 20px;
   text-align: center;
+}
+
+.article > a {
+  max-width: 80px;
+}
+
+.article .decor::after {
+  left: 3px;
+  bottom: -5px;
+  width: 90%;
+}
+
+.article__text .decor::after {
+  left: 0;
+  bottom: 1px;
+  width: 100%;
 }
 
 .article__container {
@@ -102,7 +119,6 @@
   @media (max-width: $mobile-width) {
     font-size: 26px;
   }
-
 }
 
 .article__container article:nth-child(2) {
@@ -161,4 +177,9 @@
     height: auto;
     width: 100%;
   }
+}
+
+.article__image:hover ~ .article__text,
+.article__text:hover {
+  box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
 }
