@@ -52,7 +52,7 @@
           <nav class="header__user-nav user-nav">
             <ul>
               <li>
-                <a href="login.html">
+                <a href="login.html" data-open-modal="feedback">
                   <span>Login</span>
                   <svg width="20" height="18">
                     <use xlink:href="./img/sprite/sprite.svg#cart"></use>
@@ -77,7 +77,7 @@
               <li><a href="#">Stores & Hours</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
-            <a href="login.html">Login</a>
+            <a href="login.html" data-open-modal="feedback">Login</a>
           </nav>
         </div>
       </header>
@@ -788,6 +788,59 @@
         </div>
       </footer>
     </div>
+
+    <section class="modal modal--preload login " data-modal="feedback">
+        <div class="modal__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+      <div class=" modal__content login__container ">
+        <button class="login__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="14" height="14">
+            <use xlink:href="./img/sprite/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="login__img">
+          <picture>
+            <!-- desktop:1x - 430px; 2x - 860px;
+            tablet: 1x - 442px; 2x -884px;
+            mobile: 1x - 270px; 2x - 540px;-->
+            <!-- web-p-->
+            <source type="image/webp" media="(min-width: 1024px)" srcset="./img/login@1x.webp 1x, ./img/login@2x.webp 2x"/>
+            <source type="image/webp" media="(min-width: 1023px)" srcset="./img/login-t@1x.webp 1x, ./img/login-t@2x.webp 2x"/>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/login-m@1x.webp 1x, ./img/login-m@2x.webp 2x"/>
+            <!-- -->
+            <img
+              srcset="
+                ./img/login@1x.jpg     430w,
+                ./img/login@2x.jpg     860w,
+                ./img/login-t@1x.jpg   442w,
+                ./img/login-t@2x.jpg   884w,
+                ./img/login-m@1x.jpg   270w,
+                ./img/login-m@2x.jpg   540w
+              "
+              sizes="
+              (min-width: 1024px) 430px,
+              ((min-width: 1024px) and (min-resolution: 2dppx)) 860px,
+              (max-width: 1023px) 442px,
+              ((max-width: 1023px) and (min-resolution: 2dppx)) 884px,
+              (max-width: 767px) 270px,
+              ((max-width: 767px) and (min-resolution: 2dppx)) 540px
+              "
+              src="./img/login@1x.jpg" loading="lazy" alt="Jewellery" width="430" height="138"
+            />
+          </picture>
+        </div>
+        <div class="login__form">
+          <h2>Log In</h2>
+          <form method="post" action="https://echo.htmlacademy.ru">
+            <label for=""><input type="email" required="" placeholder="Your E-mail"></label>
+            <label for=""><input type="password" required="" placeholder="Password"></label>
+            <a href="#">Forgot your password?</a>
+            <button type="submit">Log In</button>
+          </form>
+          <span>Don’t have an account? <a href="#">Sign Up</a> </span>
+        </div>
+      </div>
+    </section>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

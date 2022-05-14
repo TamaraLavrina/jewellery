@@ -4,12 +4,13 @@
 }
 
 .login__container {
+  height: min-content;
   position: relative;
   display: flex;
   flex-direction: column;
   width: 430px;
   background-color: $color-fill;
-  margin: 100px auto;
+  margin: 10px auto;
 
   @media (max-width: $tablet-width) {
     width: 90%;
