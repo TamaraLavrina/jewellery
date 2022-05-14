@@ -5,27 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/poppins-v15-latin-500.woff" as="font" type="font/woff" crossorigin=""/>
+    <link rel="preload" href="./fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin=""/>
+    <link rel="preload" href="./fonts/poppins-v15-latin-700.woff" as="font" type="font/woff" crossorigin="" />
+    <link rel="preload" href="./fonts/poppins-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="preload" href="./fonts/poppins-v15-latin-regular.woff" as="font" type="font/woff" crossorigin="" />
+    <link rel="preload" href="./fonts/poppins-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="" />
+    <!-- <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-700.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-600.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-italic.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-500italic.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./fonts/cormorant-garamond-v10-latin-500italic.woff2" as="font" type="font/woff2" crossorigin=""> -->
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
+
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
+            <header class="header header--menu-closed">
+              <div class="header__wrapper .header__wrapper--menu-closed">
+
+            <a class="header__logo header__logo--index logo">
+              <svg width="66" height="66">
+                <use xlink:href="./img/sprite/sprite.svg#logo"></use>
+              </svg>
+            </a>
+
+          </div>
+        </header>
       <main>
+          <section class="promo">
+            <div class="promo__wrap">
+              <picture>
+                <!-- desktop:
+                  1x - 1366px; 2x - 2732px;
+                  tablet:
+                  1x - 768px; 2x - 1536px;
+                  mobile:
+                  1x - 320px; 2x - 640px;-->
+                <!-- web-p-->
+                <source
+                  type="image/webp"
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./img/catalog/catalog-promo@1x.webp 1x,
+                    ./img/catalog/catalog-promo@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 1023px)"
+                  srcset="
+                    ./img/catalog/catalog-promo-t@1x.webp 1x,
+                    ./img/catalog/catalog-promo-t@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/catalog/catalog-promo-m@1x.webp 1x,
+                    ./imgcatalog/catalog-promo-m@2x.webp 2x
+                  "
+                />
+
+                <!-- -->
+                <img
+                  srcset="
+                    ./img/catalog/catalog-promo@1x.jpg     1366w,
+                    ./img/catalog/catalog-promo@2x.jpg     2732w,
+                    ./img/catalog/catalog-promo-t@1x.jpg  768w,
+                    ./img/catalog/catalog-promo-t@2x.jpg 1536w,
+                    ./img/catalog/catalog-promo-m@1x.jpg  320w,
+                    ./img/catalog/catalog-promo-m@2x.jpg  640w
+                  "
+                  sizes="
+                (min-width: 1024px) 1366px,
+                ((min-width: 1024px) and (min-resolution: 2dppx)) 2732px,
+                (max-width: 1023px) 768px,
+                ((max-width: 1023px) and (min-resolution: 2dppx)) 1536px,
+                (max-width: 767px) 320px,
+                ((max-width: 767px) and (min-resolution: 2dppx)) 640px
+                "
+                  src="./img/catalog/catalog-promo@1x.jpg"
+                  loading="lazy"
+                  alt="promo Jewellery"
+                  width="1366"
+                  height="261"
+                />
+              </picture>
+
+              <div class="promo__text">
+                <h1>ALL JEWELLERY</h1>
+                <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+              </div>
+            </div>
+          </section>
         <section class="intro">
           <div class="container">
             <h1>Разводящая страницы</h1>
-            <p>На многостраничных сайтах используйте эту страницу для создания списков всех страниц и ссылок на них.</p>
-            <p>Это делается для удобства тестирования и для быстрого доступа к нужно странице.</p>
-            <h2>Пример</h2>
             <ol>
               <li>
                 <a href="main.html">Главная</a>
               </li>
               <li>
                 <a href="catalog.html">Каталог</a>
+              </li>
+              <li>
+                <a href="login.html">Логин</a>
               </li>
             </ol>
           </div>

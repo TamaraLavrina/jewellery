@@ -1,0 +1,41 @@
+.intro {
+  max-width: 1170px;
+  font-family: $ff-basic;
+  align-items: center;
+}
+
+.intro h1 {
+  display: block;
+  margin: 0 auto;
+  margin-top: 130px;
+  text-align: center;
+}
+
+.intro ol {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.intro li {
+  padding: 20px;
+  font-family: $ff-popins;
+  text-decoration: underline;
+  color: $color-accent;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro a {
+  font-family: $ff-popins;
+  font-weight: 500;
+  color: $color-accent;
+}
+
+.intro .container {
+  width: 90%;
+  margin: 0 auto 150px;
+}

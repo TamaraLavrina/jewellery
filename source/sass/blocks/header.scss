@@ -89,6 +89,10 @@
   }
 }
 
+.header__logo--index {
+  grid-column: 1/-1;
+}
+
 .header__logo svg {
   @media (max-width: $mobile-width) {
     zoom: 0.8;
