@@ -13,7 +13,6 @@
 @import "global/utils";
 @import "global/modal";
 
-
 // Blocks
 // ---------------------------------
 @import "blocks/header";
@@ -27,6 +26,11 @@
 @import "blocks/footer";
 @import "blocks/intro";
 @import "blocks/login";
+@import "blocks/products";
+@import "blocks/catalog";
+@import "blocks/filters";
+@import "blocks/range-controls";
+@import "blocks/price-controls";
 
 // @import "blocks/btn";
 // @import "blocks/modal";

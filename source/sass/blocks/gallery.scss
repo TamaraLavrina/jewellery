@@ -12,7 +12,7 @@
     grid-template-rows: 133px 87px;
     grid-column-gap: 16px;
     grid-row-gap: 21px;
-    padding-bottom: 78px;
+    padding: 58px 0 78px;
   }
 
   @media (max-width: $mobile-width) {
@@ -21,7 +21,7 @@
     grid-column-gap: 24px;
     grid-row-gap: 27px;
 
-    padding-top: 45px;
+    padding-top: 41px;
     padding-bottom: 72px;
   }
 }
@@ -34,7 +34,6 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
-  letter-spacing: 0em;
   text-align: center;
 
   @media (max-width: $tablet-width) {
@@ -64,12 +63,11 @@
     width: 100%;
     height: fit-content;
   }
-
 }
 
 @media (max-width: $mobile-width) {
   .gallery li:nth-child(3),
-  .gallery li:nth-child(4)  {
+  .gallery li:nth-child(4) {
     display: none;
   }
 }

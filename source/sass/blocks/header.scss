@@ -1,5 +1,5 @@
 .header {
-  background-image: linear-gradient(to bottom,#fff 114px,#e0e0e0e0 115px,#f1f1f1 116px,#fff 116px);
+  background-image: linear-gradient(to bottom, #ffffff 114px, #e0e0e0e0 115px, #f1f1f1 116px, #ffffff 116px);
   font-family: $ff-popins;
   font-weight: 500;
 
@@ -211,8 +211,6 @@
   fill: $color-default-black;
 }
 
-
-
 //
 /* стили для открытого меню на плашетной ширине*/
 //
@@ -223,7 +221,7 @@
     background-color: $color-accent;
   }
 
-  .header--menu-open  .header__logo svg {
+  .header--menu-open .header__logo svg {
     stroke: $color-default-white;
   }
 
@@ -232,7 +230,7 @@
     // grid-template-rows: repeat(2, 200px, 1fr);
   }
 
-  .header--menu-open .header__wrapper form{
+  .header--menu-open .header__wrapper form {
     display: grid;
     grid-row: 2/3;
     grid-column: 1/-1;
@@ -339,19 +337,17 @@
   }
 }
 
-
 //
 /* скрывает некоторые элементы при закрытом меню*/
 //
-  .header--menu-closed .header__wrapper form {
-    @media (max-width: $tablet-width) {
+.header--menu-closed .header__wrapper form {
+  @media (max-width: $tablet-width) {
     display: none;
-    }
   }
+}
 
-  .header--menu-closed .header__site-nav {
-    @media (max-width: $tablet-width) {
+.header--menu-closed .header__site-nav {
+  @media (max-width: $tablet-width) {
     display: none;
-    }
   }
-
+}

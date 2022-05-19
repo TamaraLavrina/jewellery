@@ -1,6 +1,6 @@
-const items = document.querySelectorAll('.faq__item');
-const accordButtons = document.querySelectorAll('.faq__heading');
-const content = document.querySelectorAll('.faq__content');
+const items = document.querySelectorAll('.acc-item');
+const accordButtons = document.querySelectorAll('.acc-heading');
+const content = document.querySelectorAll('.acc-content');
 
 
 const accordeonToggle = (evt) => {
@@ -18,7 +18,10 @@ const accordeonInit = () => {
     return;
   } else {
     // items.forEach((it) => it.classList.add('close'));
+    items.forEach((it) => it.classList.remove('open'));
+    accordButtons.forEach((it) => it.setAttribute('tabindex', 1));
     accordButtons.forEach((it) => it.addEventListener('click', (evt) => accordeonToggle(evt)));
+
   }
 };
 export {accordeonInit};

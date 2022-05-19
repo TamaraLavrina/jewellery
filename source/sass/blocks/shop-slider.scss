@@ -1,6 +1,6 @@
 .shop-slider {
-justify-content: center;
-padding: 120px 0 43px;
+  justify-content: center;
+  padding: 120px 0 43px;
 
   @media (max-width: $tablet-width) {
     padding-top: 70px;
@@ -60,7 +60,7 @@ padding: 120px 0 43px;
 
   @media (max-width: $tablet-width) {
     margin-top: 50px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $mobile-width) {

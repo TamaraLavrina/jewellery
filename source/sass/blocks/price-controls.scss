@@ -1,0 +1,30 @@
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+  @media (max-width: $tablet-width) {
+    width: 215px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 174px;
+  }
+}
+
+.price-controls label {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 50px;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.price-controls input {
+  max-width: 50px;
+  border: none;
+}

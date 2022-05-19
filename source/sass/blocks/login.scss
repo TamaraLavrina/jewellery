@@ -10,7 +10,7 @@
   flex-direction: column;
   width: 430px;
   background-color: $color-fill;
-  margin: 10px auto;
+  margin: 100px auto;
 
   @media (max-width: $tablet-width) {
     width: 90%;
@@ -91,7 +91,7 @@
 
   border: none;
   background-color: $color-accent;
-  color:$color-default-white;
+  color: $color-default-white;
 
   @media (max-width: $mobile-width) {
     margin-top: 33px;
@@ -107,7 +107,6 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 8px;
   }
-
 }
 
 .login__form span a {

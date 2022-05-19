@@ -23,6 +23,10 @@
   height: 463px;
 }
 
+.promo--catalog img {
+  height: 261px;
+}
+
 .promo__text {
   display: block;
   position: absolute;
@@ -45,6 +49,14 @@
   }
 }
 
+.promo__text--catalog {
+  top: 35%;
+
+  @media (max-width: $mobile-width) {
+    top: 30%;
+  }
+}
+
 .promo h1 {
   font-size: 45px;
   font-weight: 700;
@@ -60,6 +72,18 @@
   }
 }
 
+.promo__text--catalog h1 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 2px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 34px;
+  }
+}
+
 .promo__text p {
   font-size: 38px;
   font-style: italic;
@@ -70,5 +94,20 @@
     font-size: 34px;
     line-height: 44px;
     margin-top: -6px;
+  }
+}
+
+.promo__text--catalog p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }

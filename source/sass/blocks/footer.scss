@@ -139,10 +139,11 @@
 .footer__list {
   width: 40%;
   columns: 2;
-  gap: 50px;
+  gap: 40px;
   margin: 0;
   margin-left: auto;
   padding-left: 20px;
+  padding-top: 6px;
 
   @media (max-width: $tablet-width) {
     margin: 0;
@@ -162,8 +163,7 @@
 
 .footer a {
   display: block;
-  display: block;
-  padding: 12px 0;
+  padding: 11px 0;
   font-size: 16px;
 
   @media (max-width: $tablet-width) {
@@ -181,13 +181,15 @@
 
 .footer__socials {
   padding: 0;
+  padding-top: 7px;
   margin: 0;
   margin-left: 15px;
 
   @media (max-width: $tablet-width) {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 5px;
     margin-top: 2px;
+    padding-top: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -224,20 +226,20 @@
 }
 
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
-		transform: translateY(0);
-		transform: translateY(0);
-	}
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
 
-	40% {
-		transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
+  40% {
+    transform: translateY(-20px);
+  }
 
-	80% {
-		transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
+  80% {
+    transform: translateY(-10px);
+  }
 }
 
 .footer button[type="submit"]:hover {
@@ -245,5 +247,5 @@
 }
 
 .footer__socials a:hover .footer__socials svg {
- color: $color-accent;
+  color: $color-accent;
 }

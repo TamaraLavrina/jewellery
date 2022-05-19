@@ -1,7 +1,6 @@
 .slider {
   position: relative;
   overflow: hidden;
-  // margin-top: 45px;
 }
 
 .slider__list {
@@ -23,7 +22,6 @@
   width: 100%;
   background: #ffffff;
   text-align: center;
-
 }
 
 .slider__item img {
@@ -38,7 +36,6 @@
     min-height: 136px;
     min-width: 130px;
   }
-
 }
 
 .slider__btn {
@@ -73,6 +70,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+  }
 }
 
 .slider__pagination-bullet {
@@ -91,7 +92,6 @@
   @media (max-width: $tablet-width) {
     font-size: 17px;
   }
-
 }
 
 .slider__pagination-bullet.swiper-pagination-bullet-active {
