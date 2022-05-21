@@ -526,7 +526,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "cormorant";
+  font-family: "cormorant", "Тimes New Roman", serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -658,7 +658,7 @@ button,
 
 h2 {
   text-align: center;
-  font-family: "cormorant";
+  font-family: "cormorant", "Тimes New Roman", serif;
   font-size: 34px;
   font-weight: 700;
   line-height: 44px;
@@ -773,7 +773,7 @@ h2 {
 .header {
   background-image: -o-linear-gradient(top, #ffffff 114px, #e0e0e0e0 115px, #f1f1f1 116px, #ffffff 116px);
   background-image: linear-gradient(to bottom, #ffffff 114px, #e0e0e0e0 115px, #f1f1f1 116px, #ffffff 116px);
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-weight: 500;
 }
 
@@ -891,7 +891,7 @@ h2 {
 
 .header input::-webkit-input-placeholder {
   color: #9b9997;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -899,7 +899,7 @@ h2 {
 
 .header input::-moz-placeholder {
   color: #9b9997;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -907,7 +907,7 @@ h2 {
 
 .header input:-ms-input-placeholder {
   color: #9b9997;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -915,7 +915,7 @@ h2 {
 
 .header input::-ms-input-placeholder {
   color: #9b9997;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -923,7 +923,7 @@ h2 {
 
 .header input::placeholder {
   color: #9b9997;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -1000,7 +1000,7 @@ h2 {
   top: 39%;
   text-align: center;
   color: #ffffff;
-  font-family: "cormorant";
+  font-family: "cormorant", "Тimes New Roman", serif;
 }
 
 .promo__text--catalog {
@@ -1045,7 +1045,7 @@ h2 {
 }
 
 .shop-slider h3 {
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -1053,7 +1053,7 @@ h2 {
 }
 
 .shop-slider span {
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
@@ -1065,7 +1065,7 @@ h2 {
   max-width: 95px;
   margin: 0 auto;
   margin-top: 19px;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -1164,7 +1164,7 @@ h2 {
 }
 
 .slider__pagination-bullet {
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   color: #9b9997;
   min-width: 20px;
   min-height: 30px;
@@ -1197,7 +1197,7 @@ h2 {
 .article a {
   display: block;
   margin: 20px auto 0;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -1229,14 +1229,14 @@ h2 {
   padding-top: 65px;
 }
 
-.article__container article {
+article {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
 
-.article__container article:nth-child(2n) .article__image {
+article:nth-child(2n) .article__image {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -1264,7 +1264,7 @@ h2 {
 }
 
 .article__text time {
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #9b9997;
@@ -1279,19 +1279,19 @@ h2 {
   max-width: 163px;
 }
 
-.article__container article:nth-child(2) {
+article:nth-child(2n) {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
 }
 
-.article__container article:nth-child(3n) {
+article:nth-child(3n) {
   display: contents;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
 }
 
-.article__container article:nth-child(3n) .article__image {
+article:nth-child(3n) .article__image {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1300,7 +1300,7 @@ h2 {
   grid-row: 1/3;
 }
 
-.article__container article:nth-child(3n) .article__text {
+article:nth-child(3n) .article__text {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -1323,7 +1323,7 @@ h2 {
 
 .faq {
   padding: 55px 0 59px;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
 }
 
 .faq__wrap {
@@ -1422,7 +1422,7 @@ h2 {
   display: block;
   max-width: 90px;
   margin: 28px auto 6px;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -1451,7 +1451,7 @@ h2 {
 }
 
 .footer {
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   background-color: #000000;
   color: #ffffff;
   padding-top: 80px;
@@ -1481,7 +1481,7 @@ h2 {
 }
 
 .footer legend {
-  font-family: "cormorant";
+  font-family: "cormorant", "Тimes New Roman", serif;
   font-size: 34px;
   font-weight: 700;
   line-height: 44px;
@@ -1651,7 +1651,7 @@ h2 {
 
 .intro {
   max-width: 1170px;
-  font-family: "cormorant";
+  font-family: "cormorant", "Тimes New Roman", serif;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1679,7 +1679,7 @@ h2 {
 
 .intro li {
   padding: 20px;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   text-decoration: underline;
   color: #a87a61;
   text-align: center;
@@ -1687,7 +1687,7 @@ h2 {
 }
 
 .intro a {
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-weight: 500;
   color: #a87a61;
 }
@@ -1699,7 +1699,7 @@ h2 {
 
 .login {
   background-color: #ffffff;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
 }
 
 .login__container {
@@ -1912,7 +1912,7 @@ h2 {
 .products button {
   border: none;
   background-color: transparent;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -1936,7 +1936,7 @@ h2 {
 
 .products__buttons a {
   color: #9b9997;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   padding: 10px 6px;
   font-size: 16px;
   font-weight: 500;
@@ -1979,7 +1979,7 @@ h2 {
 }
 
 .catalog__item h3 {
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -1989,7 +1989,7 @@ h2 {
 }
 
 .catalog__item span {
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
@@ -2006,7 +2006,7 @@ h2 {
   flex-direction: column;
   min-width: 250px;
   width: 21%;
-  font-family: "poppins";
+  font-family: "poppins", "Arial", sans-serif;
   margin-right: 3%;
 }
 
@@ -2486,7 +2486,7 @@ div .open.filters__legend::after {
     grid-row-gap: 50px;
   }
 
-  .article__container article {
+  article {
     width: 100%;
     height: 300px;
     overflow: hidden;
@@ -2501,20 +2501,20 @@ div .open.filters__legend::after {
     margin: 20px auto 15px;
   }
 
-  .article__container article:nth-child(2) {
+  article:nth-child(2n) {
     -webkit-box-ordinal-group: unset;
     -ms-flex-order: unset;
     order: unset;
   }
 
-  .article__container article:nth-child(3n) {
+  article:nth-child(3n) {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
-  .article__container article:nth-child(3n) .article__image {
+  article:nth-child(3n) .article__image {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -2523,7 +2523,7 @@ div .open.filters__legend::after {
     grid-row: 1/2;
   }
 
-  .article__container article:nth-child(3n) .article__text {
+  article:nth-child(3n) .article__text {
     grid-column: 2/-1;
     grid-row: 2/-1;
     min-width: 100%;
@@ -2936,7 +2936,7 @@ div .open.filters__legend::after {
     padding-top: 55px;
   }
 
-  .article__container article {
+  article {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2947,7 +2947,7 @@ div .open.filters__legend::after {
     height: auto;
   }
 
-  .article__container article:nth-child(2n) .article__image {
+  article:nth-child(2n) .article__image {
     -webkit-box-ordinal-group: unset;
     -ms-flex-order: unset;
     order: unset;
@@ -2962,7 +2962,7 @@ div .open.filters__legend::after {
     margin: 20px auto 15px;
   }
 
-  .article__container article:nth-child(3n) {
+  article:nth-child(3n) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2972,11 +2972,11 @@ div .open.filters__legend::after {
     flex-direction: column;
   }
 
-  .article__container article:nth-child(3n) .article__image {
+  article:nth-child(3n) .article__image {
     grid-column: 1/-1;
   }
 
-  .article__container article:nth-child(3n) .article__text {
+  article:nth-child(3n) .article__text {
     grid-column: 1/-1;
   }
 
