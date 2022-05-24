@@ -56,16 +56,16 @@
         <div class="header__wrapper header__wrapper--mob">
           <!-- <header class="header header--menu-closed">
             <div class="header__wrapper .header__wrapper--menu-closed"> -->
-          <button type="button" class="header__menu-button">
+          <button type="button" class="header__menu-button" aria-label="переключение мобильного меню">
             <svg width="25" height="18">
               <use xlink:href="./img/sprite/sprite.svg#menu"></use>
             </svg>
           </button>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <form action="https://echo.htmlacademy.ru/" method="post">
             <label>
-              <input type="search" placeholder="Type here to search" />
+              <input type="search" name="search" placeholder="Type here to search" />
             </label>
-            <button type="submit">
+            <button type="submit" aria-label="поиск по сайту">
               <svg width="16" height="16">
                 <use xlink:href="./img/sprite/sprite.svg#search"></use>
               </svg>
@@ -203,26 +203,105 @@
                       type="image/webp"
                       media="(max-width: 1024px)"
                       srcset="
-                        ./img/main/items/double-pearl-earrings.webp    1x,
-                        ./img/main/items/double-pearl-earrings@2x.webp 2x
+                        ./img/main/items/necklace-desktop.webp 1x,
+                        ./img/main/items/necklace-desktop@2x.webp 2x
                       "
                     />
                     <img
                       srcset="
-                        ./img/main/items/double-pearl-earrings.jpg    270w,
-                        ./img/main/items/double-pearl-earrings@2x.jpg 540w
+                        ./img/main/items/necklace-desktop.jpg 270w,
+                        ./img/main/items/necklace-desktop@2x.jpg 540w
                       "
                       sizes="(max-width: 1024px) 270px, ((max-width: 1024px) and (min-resolution: 2dppx)) 540px"
-                      src="./img/main/items/double-pearl-earrings.jpg"
+                      src="./img/main/items/necklace-desktop.jpg"
                       loading="lazy"
                       alt="jewellery"
                       width="270"
                       height="284"
                     />
                   </picture>
-                  <h3>Double pearl earrings</h3>
+                  <h3>Necklace with amethyst</h3>
+                  <span>$ 145</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1024px)"
+                      srcset="
+                        ./img/main/items/layered-choker-necklace-desktop-1.webp    1x,
+                        ./img/main/items/layered-choker-necklace-desktop@2x.webp 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./img/main/items/layered-choker-necklace-desktop-1.jpg    270w,
+                        ./img/main/items/layered-choker-necklace-desktop@2x.jpg 540w
+                      "
+                      sizes="(max-width: 1024px) 270px, ((max-width: 1024px) and (min-resolution: 2dppx)) 540px"
+                      src="./img/main/items/layered-choker-necklace-desktop-1.jpg"
+                      loading="lazy"
+                      alt="jewellery"
+                      width="270"
+                      height="284"
+                    />
+                  </picture>
+                  <h3>Layered сhoker</h3>
                   <span>$ 115</span>
                 </li>
+                <li class="slider__item swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1024px)"
+                      srcset="
+                        ./img/main/items/dainty-gold-necklace-desktop.webp    1x,
+                        ./img/main/items/dainty-gold-necklace-desktop@2x.webp 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./img/main/items/dainty-gold-necklace-desktop.jpg    270w,
+                        ./img/main/items/dainty-gold-necklace-desktop@2x.jpg 540w
+                      "
+                      sizes="(max-width: 1024px) 270px, ((max-width: 1024px) and (min-resolution: 2dppx)) 540px"
+                      src="./img/main/items/dainty-gold-necklace-desktop.jpg"
+                      loading="lazy"
+                      alt="jewellery"
+                      width="270"
+                      height="284"
+                    />
+                  </picture>
+                  <h3>Gold chain</h3>
+                  <span>$ 215</span>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1024px)"
+                      srcset="
+                        ./img/main/items/galaxy-earrings-desktop.webp    1x,
+                        ./img/main/items/galaxy-earrings-desktop@2x.webp 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./img/main/items/galaxy-earrings-desktop.jpg    270w,
+                        ./img/main/items/galaxy-earrings-desktop@2x.jpg 540w
+                      "
+                      sizes="(max-width: 1024px) 270px, ((max-width: 1024px) and (min-resolution: 2dppx)) 540px"
+                      src="./img/main/items/galaxy-earrings-desktop.jpg"
+                      loading="lazy"
+                      alt="jewellery"
+                      width="270"
+                      height="284"
+                    />
+                  </picture>
+                  <h3>Galaxy earrings</h3>
+                  <span>$ 95</span>
+                </li>
+
                 <li class="slider__item swiper-slide">
                   <picture>
                     <source
@@ -385,32 +464,6 @@
                       type="image/webp"
                       media="(max-width: 1024px)"
                       srcset="
-                        ./img/main/items/purple-gemstone-necklace.webp    1x,
-                        ./img/main/items/purple-gemstone-necklace@2x.webp 2x
-                      "
-                    />
-                    <img
-                      srcset="
-                        ./img/main/items/purple-gemstone-necklace.jpg    270w,
-                        ./img/main/items/purple-gemstone-necklace@2x.jpg 540w
-                      "
-                      sizes="(max-width: 1024px) 270px, ((max-width: 1024px) and (min-resolution: 2dppx)) 540px"
-                      src="./img/main/items/purple-gemstone-necklace.jpg"
-                      loading="lazy"
-                      alt="jewellery"
-                      width="270"
-                      height="284"
-                    />
-                  </picture>
-                  <h3>Necklace with amethyst</h3>
-                  <span>$ 105</span>
-                </li>
-                <li class="slider__item swiper-slide">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(max-width: 1024px)"
-                      srcset="
                         ./img/main/items/elephant-earrings.webp    1x,
                         ./img/main/items/elephant-earrings@2x.webp 2x
                       "
@@ -457,7 +510,7 @@
                   <h3>Threader necklace</h3>
                   <span>$ 115</span>
                 </li>
-                <li class="slider__item swiper-slide">
+                <!-- <li class="slider__item swiper-slide">
                   <picture>
                     <source
                       type="image/webp"
@@ -508,7 +561,7 @@
                   </picture>
                   <h3>Marble earrings</h3>
                   <span>$ 105</span>
-                </li>
+                </li> -->
               </ul>
               <div class="slider__pagination swiper-pagination"></div>
             </div>
@@ -714,7 +767,7 @@
                 </h3>
                 <div class="faq__content acc-content">
                   <p>
-                    Our jewellerry is made of solid gold, silver or leather.
+                    Our jewellerry is made of solid&nbsp;gold, silver or leather.
                     Also, some jewellery contains precious and semiprecious
                     stones and crystals.
                   </p>
@@ -1085,9 +1138,9 @@
                 <p>News and updates from CH. No&nbsp;spam, we promise.</p>
                 <div class="footer__email">
                   <label>
-                    <input type="email" placeholder="Your E-mail" required />
+                    <input type="email" name="email" placeholder="Your E-mail" required />
                   </label>
-                  <button type="submit" value="Sign Up">
+                  <button type="submit" value="Sign Up" aria-label="подписаться">
                     <span>Sign Up</span>
                     <svg width="30" height="10">
                       <use xlink:href="./img/sprite/sprite.svg#signUp"></use>
@@ -1209,22 +1262,24 @@
           <div class="login__form">
             <h2>Log In</h2>
             <form method="post" action="https://echo.htmlacademy.ru">
-              <label for="email"
-                ><input
+              <label for="email">
+                <input
                   type="email"
                   id="email"
+                  name="email"
                   required=""
                   placeholder="Your E-mail"
               /></label>
-              <label for="password"
-                ><input
+              <label for="password">
+                <input
                   type="password"
                   id="password"
+                  name="password"
                   required=""
                   placeholder="Password"
               /></label>
               <a href="#">Forgot your password?</a>
-              <button type="submit">Log In</button>
+              <button type="submit" aria-label="лог ин">Log In</button>
             </form>
             <span>Don’t have an account? <a href="#">Sign Up</a> </span>
           </div>

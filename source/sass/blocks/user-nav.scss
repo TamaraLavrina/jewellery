@@ -32,3 +32,11 @@
     padding-right: 2px;
   }
 }
+
+.user-nav a:hover {
+  color: $color-accent;
+
+  @media (max-width: $mobile-width) {
+    color: $color-default-black;
+  }
+}

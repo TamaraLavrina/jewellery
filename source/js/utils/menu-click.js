@@ -6,6 +6,7 @@ const neededWidth = document.querySelector('.catalog__list ');
 const filterButton = document.querySelector('.filters-handler');
 const filter = document.querySelector('.filters');
 const closeFilterButton = document.querySelector('.filters__close');
+const body = document.querySelector('body');
 
 
 const onMenuClickHandler = () => {
@@ -14,11 +15,13 @@ const onMenuClickHandler = () => {
     header.classList.add('header--menu-open');
     wrapper.classList.remove('header__wrapper--menu-closed');
     wrapper.classList.add('header__wrapper--mob');
+    body.classList.add('body__no-scrol');
   } else if (header.classList.contains('header--menu-open') || wrapper.classList.contains('header__wrapper--mob')) {
     header.classList.add('header--menu-closed');
     header.classList.remove('header--menu-open');
     wrapper.classList.add('header__wrapper--menu-closed');
     wrapper.classList.remove('header__wrapper--mob');
+    body.classList.remove('body__no-scrol');
   }
 };
 

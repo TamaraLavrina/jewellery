@@ -35,17 +35,17 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 31px;
+    margin-bottom: 35px;
   }
 }
 
 .footer form p {
-  margin-top: 13px;
-  margin-bottom: 25px;
+  margin-top: 7px;
+  margin-bottom: 30px;
   color: $color-light-grey-10a;
 
   @media (max-width: $tablet-width) {
-    margin-top: 6px;
+    margin-top: 7px;
     padding-left: 3px;
     margin-bottom: 30px;
   }
@@ -65,6 +65,11 @@
   line-height: 44px;
   letter-spacing: 0.03em;
   margin-left: -4px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+  }
+
 }
 
 .footer fieldset {
@@ -77,11 +82,12 @@
   color: $color-default-white;
   background-color: transparent;
   border: none;
-  padding: 9px 5px 10px 0;
+  padding: 10px 5px 8px 0;
   width: 100%;
 
   @media (max-width: $mobile-width) {
     padding-bottom: 5px;
+    padding-top: 8px;
   }
 }
 
@@ -97,18 +103,17 @@
   border: none;
   color: $color-default-white;
   cursor: pointer;
-
-  @media (max-width: $tablet-width) {
-    padding: 0;
-  }
+  padding: 0;
+  flex-shrink: 0;
 
   @media (max-width: $mobile-width) {
     width: 105px;
-    flex-shrink: 0;
   }
 }
 
 .footer button[type="submit"] span {
+  margin-right: 7px;
+
   @media (max-width: $tablet-width) {
     margin-right: 10px;
   }
@@ -139,7 +144,7 @@
 .footer__list {
   width: 40%;
   columns: 2;
-  gap: 40px;
+  gap: 35px;
   margin: 0;
   margin-left: auto;
   padding-left: 20px;
@@ -163,12 +168,8 @@
 
 .footer a {
   display: block;
-  padding: 11px 0;
+  padding: 11px 0 10px;
   font-size: 16px;
-
-  @media (max-width: $tablet-width) {
-    padding: 11px 0;
-  }
 }
 
 .footer a:hover {
@@ -188,7 +189,6 @@
   @media (max-width: $tablet-width) {
     margin-left: 0;
     margin-right: 5px;
-    margin-top: 2px;
     padding-top: 0;
   }
 
@@ -196,8 +196,7 @@
     display: flex;
     width: 100%;
     margin-right: 0;
-    margin-left: -10px;
-    margin-top: 27px;
+    margin-top: 35px;
   }
 }
 
@@ -220,10 +219,17 @@
   width: max-content;
 
   @media (max-width: $mobile-width) {
-    padding: 5px;
-    margin-right: 25px;
+    padding: 3px 0;
+    margin-right: 33px;
   }
 }
+
+// .footer__socials a:first-of-type {
+//   @media (max-width: $mobile-width) {
+//     padding-left: 10px;
+//     margin-right: 20px;
+//   }
+// }
 
 @keyframes bounce {
   0%,

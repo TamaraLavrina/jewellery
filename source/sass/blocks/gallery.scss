@@ -5,14 +5,14 @@
   grid-template-rows: 230px 150px;
   grid-column-gap: 27px;
   grid-row-gap: 34px;
-  padding: 60px 0 128px;
+  padding: 60px 0 131px;
   margin: 0;
 
   @media (max-width: $tablet-width) {
     grid-template-rows: 133px 87px;
     grid-column-gap: 16px;
     grid-row-gap: 21px;
-    padding: 58px 0 78px;
+    padding: 58px 0 80px;
   }
 
   @media (max-width: $mobile-width) {

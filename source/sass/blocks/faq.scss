@@ -37,9 +37,14 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 20px 20px 15px 25px;
+    padding: 18px 20px 17px 25px;
   }
 }
+
+.faq__item:hover {
+  background-color: $shadow;
+}
+
 
 .faq__item:last-child {
   border-bottom: 1px solid $color-accent;
@@ -54,7 +59,7 @@
 }
 
 .open .faq__content {
-  padding: 0  400px 0 43px;
+  padding: 0  400px 0 49px;
   width: 100%;
   margin: 0;
   display: block;

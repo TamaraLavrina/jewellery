@@ -1,0 +1,7 @@
+.site-nav a:hover {
+  color: $color-accent;
+
+  @media (max-width: $tablet-width) {
+    color: $color-default-black;
+  }
+}

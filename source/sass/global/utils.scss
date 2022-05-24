@@ -196,7 +196,7 @@ button,
 
   @media (max-width: $mobile-width) {
     max-width: unset;
-    width: 90%;
+    width: 91%;
   }
 }
 
@@ -212,6 +212,7 @@ h2 {
 
 .decor {
   position: relative;
+  font-size: 16px;
 }
 
 .decor::after {
@@ -224,25 +225,6 @@ h2 {
   background-color: $color-accent;
 }
 
-// .modal {
-//   background-color: $color-default-white;
-// }
-
-// .is-active .modal {
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100vh;
-//   overflow-y: hidden;
-// }
-
-// .is-active body {
-//   position: relative;
-//   background-color: $color-default-white;
-// }
-
-// .modal--close {
-//   display: none;
-// }
+.body__no-scrol {
+  overflow: hidden;
+}

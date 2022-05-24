@@ -3,7 +3,7 @@
   justify-content: center;
 
   @media (max-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 15px;
   }
 
   @media (max-width: $mobile-width) {
@@ -35,7 +35,7 @@
 
 .article__text .decor::after {
   left: 0;
-  bottom: 1px;
+  bottom: -9px;
   width: 100%;
 
   @media (max-width: $tablet-width) {
@@ -47,7 +47,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  padding-top: 65px;
+  padding-top: 68px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
@@ -55,8 +55,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    grid-row-gap: 40px;
-    padding-top: 55px;
+    grid-row-gap: 38px;
+    padding-top: 58px;
   }
 }
 
@@ -86,30 +86,31 @@ article {
 }
 
 .article__text {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: $color-back;
-  justify-content: space;
   text-align: center;
-  padding-top: 66px;
-  padding-bottom: 35px;
+  padding-top: 64px;
+  padding-bottom: 80px;
 
   @media (max-width: $tablet-width) {
-    padding: 65px 85px;
+    padding: 68px 0 85px;
     line-height: 1;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 49px 0 22px;
+    padding: 46px 0 45px;
     min-height: 256px;
   }
 }
 
 .article__text a {
   display: block;
-  margin-bottom: 35px;
+  margin: 0 auto;
   line-height: 16px;
   justify-self: center;
   height: auto;
+  width: 100px;
 }
 
 .article__text time {
@@ -125,15 +126,15 @@ article {
   font-size: 26px;
   font-weight: 600;
   line-height: 34px;
-  margin: 0 auto 25px;
+  margin: 10px auto 38px;
   max-width: 163px;
 
   @media (max-width: $tablet-width) {
-    margin: 20px auto 15px;
+    margin: 15px auto 40px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 20px auto 15px;
+    margin: 15px auto 39px;
   }
 }
 
@@ -181,12 +182,14 @@ article:nth-child(3n) .article__text {
   margin-left: auto;
 
   @media (max-width: $tablet-width) {
+    padding-top: 85px;
     grid-column: 2/-1;
     grid-row: 2/-1;
     min-width: 100%;
   }
 
   @media (max-width: $mobile-width) {
+    padding-top: 65px;
     grid-column: 1/-1;
   }
 }
