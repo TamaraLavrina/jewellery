@@ -90,8 +90,17 @@ article {
   flex-direction: column;
   background-color: $color-back;
   text-align: center;
-  padding-top: 64px;
-  padding-bottom: 80px;
+  padding-top: 21.3%;
+  padding-bottom: 26.6%;
+
+  @media (max-width: 1200px) {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 1152px) {
+    padding-top: 35px;
+  }
 
   @media (max-width: $tablet-width) {
     padding: 68px 0 85px;
@@ -105,6 +114,7 @@ article {
 }
 
 .article__text a {
+  font-weight: 500;
   display: block;
   margin: 0 auto;
   line-height: 16px;
@@ -180,6 +190,8 @@ article:nth-child(3n) .article__text {
   grid-column: 2/3;
   min-width: 285px;
   margin-left: auto;
+  padding-bottom: 12.7%;
+  padding-top: 10%;
 
   @media (max-width: $tablet-width) {
     padding-top: 85px;
@@ -195,11 +207,11 @@ article:nth-child(3n) .article__text {
 }
 
 .article__image img {
+  width: 100%;
   height: 100%;
 
   @media (max-width: $tablet-width) {
-    height: fit-content;
-    width: 100%;
+    height: auto;
   }
 }
 

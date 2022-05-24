@@ -978,6 +978,14 @@ h2 {
 .promo {
   position: relative;
   background-color: rgba(86, 64, 52, 0.7);
+  min-height: 463px;
+  background-image: -webkit-image-set(url("../img/main/promo@2x.jpg") 2x, url("../img/main/promo@1x.jpg") 1x);
+  background-image: image-set(url("../img/main/promo@2x.jpg") 2x, url("../img/main/promo@1x.jpg") 1x);
+  background-image: -webkit-image-set(url("../img/main/promo@2x.webp") 2x, url("../img/main/promo@2x.webp") 1x);
+  background-image: image-set(url("../img/main/promo@2x.webp") 2x, url("../img/main/promo@2x.webp") 1x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo::after {
@@ -995,13 +1003,15 @@ h2 {
   margin: 0 auto;
 }
 
-.promo img {
-  width: 100%;
-  height: 463px;
-}
-
-.promo--catalog img {
-  height: 261px;
+.promo--catalog {
+  min-height: 261px;
+  background-image: -webkit-image-set(url("../img/catalog/catalog-promo@2x.jpg") 2x, url("../img/catalog/catalog-promo@1x.jpg") 1x);
+  background-image: image-set(url("../img/catalog/catalog-promo@2x.jpg") 2x, url("../img/catalog/catalog-promo@1x.jpg") 1x);
+  background-image: -webkit-image-set(url("../img/catalog/catalog-promo@2x.webp") 2x, url("../img/catalog/catalog-promo@2x.webp") 1x);
+  background-image: image-set(url("../img/catalog/catalog-promo@2x.webp") 2x, url("../img/catalog/catalog-promo@2x.webp") 1x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo__text {
@@ -1067,7 +1077,6 @@ h2 {
 
 .shop-slider span {
   font-family: "poppins", "Arial", sans-serif;
-  font-weight: 700;
   line-height: 18px;
 }
 
@@ -1203,6 +1212,7 @@ h2 {
 
 .slider__item span {
   font-size: 14px;
+  font-weight: 700;
 }
 
 .article {
@@ -1270,11 +1280,12 @@ article:nth-child(2n) .article__image {
   flex-direction: column;
   background-color: #f1ebe5;
   text-align: center;
-  padding-top: 64px;
-  padding-bottom: 80px;
+  padding-top: 21.3%;
+  padding-bottom: 26.6%;
 }
 
 .article__text a {
+  font-weight: 500;
   display: block;
   margin: 0 auto;
   line-height: 16px;
@@ -1330,9 +1341,12 @@ article:nth-child(3n) .article__text {
   grid-column: 2/3;
   min-width: 285px;
   margin-left: auto;
+  padding-bottom: 12.7%;
+  padding-top: 10%;
 }
 
 .article__image img {
+  width: 100%;
   height: 100%;
 }
 
@@ -1433,10 +1447,8 @@ article:nth-child(3n) .article__text {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 19.6% 34% (19.6%)[2];
-  grid-template-columns: 19.6% 34% repeat(2, 19.6%);
-  -ms-grid-rows: 230px 150px;
-  grid-template-rows: 230px 150px;
+  -ms-grid-columns: 19.65% 34.1% 19.65% 19.65%;
+  grid-template-columns: 19.65% 34.1% 19.65% 19.65%;
   grid-column-gap: 27px;
   grid-row-gap: 34px;
   padding: 60px 0 131px;
@@ -1939,6 +1951,7 @@ article:nth-child(3n) .article__text {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  margin-right: 4.5%;
 }
 
 .products button {
@@ -1950,6 +1963,10 @@ article:nth-child(3n) .article__text {
   line-height: 21px;
   text-align: center;
   cursor: pointer;
+}
+
+.products__buttons button {
+  padding: 0;
 }
 
 .products__buttons button:nth-child(odd) {
@@ -2233,11 +2250,11 @@ div .open.filters__legend::after {
 }
 
 .range-toggle-min {
-  left: 20%;
+  left: 22%;
 }
 
 .range-toggle-max {
-  left: 65%;
+  left: 75%;
 }
 
 .price-controls {
@@ -2247,10 +2264,12 @@ div .open.filters__legend::after {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 150px;
-  margin-left: auto;
+  width: 77%;
+  margin-left: 37px;
+  margin-top: -2px;
   margin-right: auto;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .price-controls label {
@@ -2270,6 +2289,7 @@ div .open.filters__legend::after {
 .price-controls input {
   max-width: 50px;
   border: none;
+  font-weight: 500;
 }
 
 .site-nav a:hover {
@@ -2282,6 +2302,19 @@ div .open.filters__legend::after {
     color: $color-default-white;
   }
 } */
+
+@media (max-width: 1200px) {
+  .article__text {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1152px) {
+  .article__text {
+    padding-top: 35px;
+  }
+}
 
 @media (max-width: 1023px) {
   .common-wrapp {
@@ -2477,6 +2510,20 @@ div .open.filters__legend::after {
     color: #000000;
   }
 
+  .promo {
+    background-image: -webkit-image-set(url("../img/main/promo-tab@2x.jpg") 2x, url("../img/main/promo-tab@1x.jpg") 1x);
+    background-image: image-set(url("../img/main/promo-tab@2x.jpg") 2x, url("../img/main/promo-tab@1x.jpg") 1x);
+    background-image: -webkit-image-set(url("../img/main/promo-tab@2x.webp") 2x, url("../img/main/promo-tab@2x.webp") 1x);
+    background-image: image-set(url("../img/main/promo-tab@2x.webp") 2x, url("../img/main/promo-tab@2x.webp") 1x);
+  }
+
+  .promo--catalog {
+    background-image: -webkit-image-set(url("../img/catalog/catalog-promo-t@2x.jpg") 2x, url("../img/catalog/catalog-promo-t@1x.jpg") 1x);
+    background-image: image-set(url("../img/catalog/catalog-promo-t@2x.jpg") 2x, url("../img/catalog/catalog-promo-t@1x.jpg") 1x);
+    background-image: -webkit-image-set(url("../img/catalog/catalog-promo-t@2x.webp") 2x, url("../img/catalog/catalog-promo-t@2x.webp") 1x);
+    background-image: image-set(url("../img/catalog/catalog-promo-t@2x.webp") 2x, url("../img/catalog/catalog-promo-t@2x.webp") 1x);
+  }
+
   .promo__text {
     margin-right: 15px;
   }
@@ -2569,10 +2616,7 @@ div .open.filters__legend::after {
   }
 
   .article__image img {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 100%;
+    height: auto;
   }
 
   .faq {
@@ -2605,11 +2649,9 @@ div .open.filters__legend::after {
   }
 
   .gallery__wrap {
-    -ms-grid-rows: 133px 87px;
-    grid-template-rows: 133px 87px;
     grid-column-gap: 16px;
     grid-row-gap: 21px;
-    padding: 58px 0 80px;
+    padding: 58px 0 78px;
   }
 
   .gallery a {
@@ -2627,7 +2669,7 @@ div .open.filters__legend::after {
 
   .footer form {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .footer form p {
@@ -2651,6 +2693,7 @@ div .open.filters__legend::after {
   .footer__list {
     margin: 0;
     padding: 0;
+    padding-left: 2px;
     min-width: 74%;
     max-width: 78%;
     gap: 20%;
@@ -2829,6 +2872,7 @@ div .open.filters__legend::after {
 
   .price-controls {
     width: 215px;
+    margin-left: auto;
   }
 
   .site-nav a:hover {
@@ -2929,6 +2973,20 @@ div .open.filters__legend::after {
 
   .user-nav a:hover {
     color: #000000;
+  }
+
+  .promo {
+    background-image: -webkit-image-set(url("../img/main/promo-mob@2x.jpg") 2x, url("../img/main/promo-mob@1x.jpg") 1x);
+    background-image: image-set(url("../img/main/promo-mob@2x.jpg") 2x, url("../img/main/promo-mob@1x.jpg") 1x);
+    background-image: -webkit-image-set(url("../img/main/promo-mob@2x.webp") 2x, url("../img/main/promo-mob@2x.webp") 1x);
+    background-image: image-set(url("../img/main/promo-mob@2x.webp") 2x, url("../img/main/promo-mob@2x.webp") 1x);
+  }
+
+  .promo--catalog {
+    background-image: -webkit-image-set(url("../img/catalog/catalog-promo-m@2x.jpg") 2x, url("../img/catalog/catalog-promo-m@1x.jpg") 1x);
+    background-image: image-set(url("../img/catalog/catalog-promo-m@2x.jpg") 2x, url("../img/catalog/catalog-promo-m@1x.jpg") 1x);
+    background-image: -webkit-image-set(url("../img/catalog/catalog-promo-m@2x.webp") 2x, url("../img/catalog/catalog-promo-m@2x.webp") 1x);
+    background-image: image-set(url("../img/catalog/catalog-promo-m@2x.webp") 2x, url("../img/catalog/catalog-promo-m@2x.webp") 1x);
   }
 
   .promo__text {
@@ -3076,19 +3134,14 @@ div .open.filters__legend::after {
   .gallery__wrap {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 133px 87px 87px;
-    grid-template-rows: 133px 87px 87px;
     grid-column-gap: 24px;
     grid-row-gap: 27px;
     padding-top: 41px;
-    padding-bottom: 72px;
+    padding-bottom: 69px;
   }
 
   .gallery li img {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .gallery li:nth-child(3),
@@ -3102,6 +3155,10 @@ div .open.filters__legend::after {
 
   .footer__wrap {
     width: 100%;
+  }
+
+  .footer form {
+    margin-bottom: 36px;
   }
 
   .footer form p {

@@ -1,6 +1,24 @@
 .promo {
   position: relative;
   background-color: $color-layout;
+  min-height: 463px;
+  background-image: image-set(url("../img/main/promo@2x.jpg") 2x, url("../img/main/promo@1x.jpg") 1x);
+  background-image: image-set(url("../img/main/promo@2x.webp") 2x, url("../img/main/promo@2x.webp") 1x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $tablet-width) {
+    background-image: image-set(url("../img/main/promo-tab@2x.jpg") 2x, url("../img/main/promo-tab@1x.jpg") 1x);
+    background-image: image-set(url("../img/main/promo-tab@2x.webp") 2x, url("../img/main/promo-tab@2x.webp") 1x);
+  }
+
+
+  @media (max-width: $mobile-width) {
+    background-image: image-set(url("../img/main/promo-mob@2x.jpg") 2x, url("../img/main/promo-mob@1x.jpg") 1x);
+    background-image: image-set(url("../img/main/promo-mob@2x.webp") 2x, url("../img/main/promo-mob@2x.webp") 1x);
+  }
+
 }
 
 .promo::after {
@@ -18,15 +36,25 @@
   margin: 0 auto;
 }
 
-.promo img {
-  width: 100%;
-  height: 463px;
-}
 
-.promo--catalog img {
-  height: 261px;
-}
+.promo--catalog {
+  min-height: 261px;
+  background-image: image-set(url("../img/catalog/catalog-promo@2x.jpg") 2x, url("../img/catalog/catalog-promo@1x.jpg") 1x);
+  background-image: image-set(url("../img/catalog/catalog-promo@2x.webp") 2x, url("../img/catalog/catalog-promo@2x.webp") 1x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  @media (max-width: $tablet-width) {
+    background-image: image-set(url("../img/catalog/catalog-promo-t@2x.jpg") 2x, url("../img/catalog/catalog-promo-t@1x.jpg") 1x);
+    background-image: image-set(url("../img/catalog/catalog-promo-t@2x.webp") 2x, url("../img/catalog/catalog-promo-t@2x.webp") 1x);
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: image-set(url("../img/catalog/catalog-promo-m@2x.jpg") 2x, url("../img/catalog/catalog-promo-m@1x.jpg") 1x);
+    background-image: image-set(url("../img/catalog/catalog-promo-m@2x.webp") 2x, url("../img/catalog/catalog-promo-m@2x.webp") 1x);
+  }
+}
 .promo__text {
   display: block;
   position: absolute;

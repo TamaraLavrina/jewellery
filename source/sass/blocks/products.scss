@@ -67,6 +67,7 @@
   padding: 0;
   display: flex;
   list-style: none;
+  margin-right: 4.5%;
 
   @media (max-width: $mobile-width) {
     margin-left: auto;
@@ -86,6 +87,7 @@
 }
 
 .products__buttons button {
+  padding: 0;
   @media (max-width: $mobile-width) {
     display: none;
   }

@@ -28,12 +28,10 @@
   height: 100%;
 
   @media (max-width: $tablet-width) {
-    // min-height: 340px;
     min-width: 324px;
   }
 
   @media (max-width: $mobile-width) {
-    // min-height: 136px;
     min-width: 130px;
   }
 }
@@ -112,4 +110,5 @@
 
 .slider__item span {
   font-size: 14px;
+  font-weight: 700;
 }

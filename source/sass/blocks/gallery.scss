@@ -1,28 +1,24 @@
 .gallery__wrap {
   list-style: none;
   display: grid;
-  grid-template-columns: 19.6% 34% repeat(2, 19.6%);
-  grid-template-rows: 230px 150px;
+  grid-template-columns: 19.65% 34.1% 19.65% 19.65%;
   grid-column-gap: 27px;
   grid-row-gap: 34px;
   padding: 60px 0 131px;
   margin: 0;
 
   @media (max-width: $tablet-width) {
-    grid-template-rows: 133px 87px;
     grid-column-gap: 16px;
     grid-row-gap: 21px;
-    padding: 58px 0 80px;
+    padding: 58px 0 78px;
   }
 
   @media (max-width: $mobile-width) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 133px 87px 87px;
     grid-column-gap: 24px;
     grid-row-gap: 27px;
-
     padding-top: 41px;
-    padding-bottom: 72px;
+    padding-bottom: 69px;
   }
 }
 
@@ -61,7 +57,6 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    height: fit-content;
   }
 }
 

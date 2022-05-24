@@ -1,13 +1,16 @@
 .price-controls {
   display: flex;
   justify-content: space-between;
-  width: 150px;
-  margin-left: auto;
+  width: 77%;
+  margin-left: 37px;
+  margin-top: -2px;
   margin-right: auto;
   margin-bottom: 0;
+  font-weight: 500;
 
   @media (max-width: $tablet-width) {
     width: 215px;
+    margin-left: auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -27,4 +30,5 @@
 .price-controls input {
   max-width: 50px;
   border: none;
+  font-weight: 500;
 }
