@@ -266,10 +266,9 @@
   }
 
   .header__wrapper--mob .header__site-nav ul {
-    @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
     padding-top: 35px;
-    }
+
 
     @media (max-width: $mobile-width) {
       padding-left: 5px;
@@ -323,9 +322,7 @@
   }
 
   .header__wrapper--mob .header__info-nav a[href="login.html"] {
-    @media (max-width: $tablet-width) {
-      margin-top: 27px;
-    }
+    margin-top: 27px;
 
     @media (max-width: $mobile-width) {
       margin-top: 17px;
@@ -334,12 +331,11 @@
   }
 
   .header__wrapper--mob .header__info-nav ul {
-    @media (max-width: $tablet-width) {
-      list-style: none;
-      padding: 0;
-      padding-top: 22px;
-      margin: 0;
-    }
+    list-style: none;
+    padding: 0;
+    padding-top: 22px;
+    margin: 0;
+
 
     @media (max-width: $mobile-width) {
       padding-top: 10px;

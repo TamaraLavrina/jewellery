@@ -6,40 +6,30 @@ const initSlider = () => {
       nextEl: '.slider__btn--next',
       prevEl: '.slider__btn--prev',
     },
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+      renderBullet: (index, className) => {
+        return '<button class="slider__pagination-bullet ' + className + '">' + (index + 1) + '</button>';
+      },
+    },
+
     breakpoints: {
       1024: {
-        spaceBetween: 30,
         slidesPerView: 4,
         slidesPerGroup: 4,
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true,
-          renderBullet: (index, className) => {
-            return '<button class="slider__pagination-bullet ' + className + '">' + (index + 1) + '</button>';
-          },
-        },
+
       },
       768: {
-        spaceBetween: 30,
         slidesPerView: 2,
         slidesPerGroup: 2,
-        pagination: {
-          el: 'swiper-pagination',
-          clickable: true,
-          type: 'bullets',
-          renderBullet: (index, className) => {
-            return '<button class="slider__pagination-bullet ' + className + '">' + (index + 1) + '</button>';
-          },
-        },
       },
       320: {
-        spaceBetween: 30,
         slidesPerView: 2,
         slidesPerGroup: 2,
         pagination: {
-          el: 'swiper-pagination',
-          clickable: true,
           type: 'fraction',
           renderFraction: (currentClass, totalClass) => {
             return '<span class="' + currentClass + '"></span>' +
