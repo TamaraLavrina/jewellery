@@ -80,12 +80,13 @@
 .header__logo {
   display: grid;
   justify-content: center;
-  padding-bottom: 19px;
-  padding-top: 30px;
+  width: 70px;
+  height: 70px;
+  margin: 30px auto 15px;
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 5px;
-    padding-top: 13px;
+    margin-bottom: 5px;
+    margin-top: 13px;
   }
 }
 

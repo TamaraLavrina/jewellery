@@ -20,7 +20,7 @@ const accordeonInit = () => {
     // items.forEach((it) => it.classList.add('close'));
     items.forEach((it) => it.classList.remove('open'));
     accordButtons.forEach((it) => it.setAttribute('tabindex', 1));
-    accordButtons.forEach((it) => it.addEventListener('click', (evt) => accordeonToggle(evt)));
+    items.forEach((it) => it.addEventListener('click', (evt) => accordeonToggle(evt)));
 
   }
 };

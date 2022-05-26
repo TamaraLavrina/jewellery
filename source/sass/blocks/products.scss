@@ -88,6 +88,7 @@
 
 .products__buttons button {
   padding: 0;
+
   @media (max-width: $mobile-width) {
     display: none;
   }
